@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import Alert from 'react-bootstrap/lib/Alert';
 
 class UserDetail extends Component {
-  constructor(props, context) {
-    super(props, context);
-  }
 
   render() {
     let details = this.props.details;
