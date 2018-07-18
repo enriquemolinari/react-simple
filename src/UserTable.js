@@ -29,12 +29,13 @@ class UserTable extends Component {
     this.bringUsers();
   }
 
-  //Needed for refreshing (if menu item is clicked) after mounted
+  //Needed for bringing another 10 users if menu item is clicked after mounted
   componentWillReceiveProps() {
     this.bringUsers();
   }
 
   render() {
+    console.log("render....");
     if (this.state.error) {
       return (
         <Alert bsStyle="danger">
