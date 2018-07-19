@@ -35,7 +35,6 @@ class UserTable extends Component {
   }
 
   render() {
-    console.log("render....");
     if (this.state.error) {
       return (
         <Alert bsStyle="danger">
