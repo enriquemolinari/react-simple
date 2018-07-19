@@ -12,3 +12,12 @@ After clone, just run:
 
 and then:
 > npm start
+
+Then go to http://localhost:3000/ to navigate the app:
+
+Users Table:
+![alt text](https://drive.google.com/uc?id=1ZhnwMTSF8_J2IG-bMW0KHaAgcktm6mlv)
+
+Users Detail in a Modal Window:
+![alt text](https://drive.google.com/uc?id=19kfoRcj_akesafKyHDYtcsX4PoV8uqz1)
+ 
