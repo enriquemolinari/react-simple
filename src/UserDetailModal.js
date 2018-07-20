@@ -10,7 +10,7 @@ class UserDetailModal extends Component {
     super(props, context);
     this.handleClose = this.handleClose.bind(this);
     this.state = {
-            users: null,
+            user: null,
             loading: false,
             error: false,
             errorMsg: '',
@@ -21,7 +21,7 @@ class UserDetailModal extends Component {
     this.setState({loading: true});
     fetch(this.props.apiurl) // Simulate getting details from a user selected
     .then((resp) => resp.json())
-    .then((users) => this.setState({users: users.results, loading: false}))
+    .then((user) => this.setState({user: user.results, loading: false}))
     .catch((error) => this.setState({error: true, errorMsg: error.error, loading: false}));
   }
 
@@ -45,7 +45,7 @@ class UserDetailModal extends Component {
           </Modal.Header>
           <Modal.Body>
             {
-                (this.state.users) ? <UserDetail details={this.state.users[0]}/>
+                (this.state.user) ? <UserDetail details={this.state.user[0]}/>
                                    : <BarLoader color = {'#123abc'} loading = {this.state.loading} />
             }
           </Modal.Body>
