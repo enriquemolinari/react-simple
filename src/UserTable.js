@@ -72,12 +72,10 @@ class UserTable extends Component {
           </Table>
         </div>
       { (this.state.showModal) ?
-        <div>
           <UserDetailModal
                   apiurl={this.props.apiurl}
                   show={this.state.showModal}
                   handleClose={() => this.setState({showModal: false})}/>
-        </div>
         : ''
       }
       </div>
